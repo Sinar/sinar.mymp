@@ -1,0 +1,9 @@
+*.py[cod]
+*.egg
+*.egg-info/
+parts/
+var/
+bin/
+develop-eggs/
+.installed.cfg
+*.swp
