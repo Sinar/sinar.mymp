@@ -6,4 +6,13 @@
 
     <!-- -*- extra stuff goes here -*- -->
 
+    <plone:behavior
+        title="Survey"
+        description="MyMP Survey Questions"
+        provides=".survey.ISurvey"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        marker=".survey.ISurvey"
+        />
+
+
 </configure>
