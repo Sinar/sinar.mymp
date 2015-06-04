@@ -22,6 +22,7 @@ class ISurvey(form.Schema):
                     description=_(u'Apakah yang Yang Berhormat ingin '
                     'mencapai di kawasan Yang Berhormat dalam '
                     'penggal ini?'),
+                    required=False,
                     )
 
     mymp_role = RichText(
@@ -29,6 +30,7 @@ class ISurvey(form.Schema):
                 description=_(u'Bagaimanakah atau apakah yang boleh '
                     'dilakukan supaya peranan Ahli Parlimen lebih '
                     'efektif?'),
+                required=False,
                 )
 
     mymp_book = RichText(
@@ -37,6 +39,7 @@ class ISurvey(form.Schema):
                           'rasa patut dibaca oleh rakyat Malaysia dan '
                           'jelaskan mengapa Yang Berhormat '
                           'mencadangkan buku tersebut.'),
+                required=False,
                 )
 
 alsoProvides(ISurvey,IFormFieldProvider)
