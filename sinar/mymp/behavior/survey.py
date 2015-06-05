@@ -4,6 +4,7 @@ from zope import schema
 from plone.directives import form
 from plone.dexterity.interfaces import IDexterityContent
 from plone.autoform.interfaces import IFormFieldProvider
+from plone.app.multilingual.dx.interfaces import IDexterityTranslatable
 
 from plone.namedfile import field as namedfile
 from z3c.relationfield.schema import RelationChoice, RelationList
@@ -42,4 +43,4 @@ class ISurvey(form.Schema):
                 required=False,
                 )
 
-alsoProvides(ISurvey,IFormFieldProvider)
+alsoProvides(ISurvey,IFormFieldProvider,IDexterityTranslatable)
